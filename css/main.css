@@ -188,7 +188,7 @@ p {
     height: fit-content;
     font-size: 1.1em;
     margin-left: 1em;
-    margin-top: 2.2em;
+    margin-top: 1.8em;
     padding: 0.7em 0;
     width: 30%;
   }
@@ -212,5 +212,21 @@ p {
 
   img {
     grid-area: bowl;
+  }
+}
+
+.top {
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2em);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
